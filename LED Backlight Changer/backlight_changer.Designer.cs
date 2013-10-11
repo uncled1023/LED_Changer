@@ -163,7 +163,8 @@
             this.pattern_select.FormattingEnabled = true;
             this.pattern_select.Items.AddRange(new object[] {
             "Solid",
-            "Blink"});
+            "Blink",
+            "Pulse"});
             this.pattern_select.Location = new System.Drawing.Point(12, 224);
             this.pattern_select.Name = "pattern_select";
             this.pattern_select.Size = new System.Drawing.Size(163, 21);
@@ -292,7 +293,7 @@
             this.color_delay_track.Value = 50;
             this.color_delay_track.Scroll += new System.EventHandler(this.color_delay_track_Scroll);
             // 
-            // Form1
+            // Backlight_Changer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -318,7 +319,7 @@
             this.Controls.Add(this.start_stop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(203, 521);
-            this.Name = "Form1";
+            this.Name = "Backlight_Changer";
             this.Text = "Backlight Control Panel";
             this.Load += new System.EventHandler(this.Backlight_Changer_Load);
             this.Shown += new System.EventHandler(this.Backlight_Changer_Shown);

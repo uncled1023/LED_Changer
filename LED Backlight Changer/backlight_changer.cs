@@ -596,7 +596,6 @@ namespace WindowsFormsApplication1
                 }
                 if (pattern_select.Items.Count <= 2)
                 {
-                    pattern_select.Items.Add("Pulse");
                     pattern_select.Items.Add("Gradiant");
                     pattern_select.Items.Add("Rainbow");
                     pattern_select.Items.Add("Random");
@@ -609,16 +608,15 @@ namespace WindowsFormsApplication1
                 button2.Enabled = false;
                 custom_color_2.Enabled = false;
                 button1.Enabled = false;
-                if (selected_pattern.Equals("Gradiant") || selected_pattern.Equals("Rainbow") || selected_pattern.Equals("Random") || selected_pattern.Equals("Pulse"))
+                if (selected_pattern.Equals("Gradiant") || selected_pattern.Equals("Rainbow") || selected_pattern.Equals("Random"))
                 {
                     pattern_select.SelectedIndex = 0;
                 }
-                if (pattern_select.Items.Count > 2)
+                if (pattern_select.Items.Count > 3)
                 {
                     pattern_select.Items.RemoveAt(5);
                     pattern_select.Items.RemoveAt(4);
                     pattern_select.Items.RemoveAt(3);
-                    pattern_select.Items.RemoveAt(2);
                 }
             }
             if (connected && stopped)
